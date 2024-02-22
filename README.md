@@ -17,12 +17,20 @@
 
 ### model.py
 - Contains the Model definition
-- Contains the train and test functions
 
 ### utils.py
 - Planned to put utils like common functions to be used
-- Currently contains a few for example like transforms and GetCorrectPredCount
-- But they will go in their proper files later
+- Contains the train and test functions and GetCorrectPredCount and drawLossAccuracyPlots
+- train
+    - Model training method to do forward and backward pass
+    - Also to calculate the accuracy
+    - Return the loss and accuracy
+- test
+    - Model validation method to do inference
+    - Also to calculate the accuracy
+    - Return the loss and accuracy
+- GetCorrectPredCount: Gives the count of correct preditions
+- drawLossAccuracyPlots: Draws the curves for training and test accuracy and losses
 
 #### Model definition
 | Layer (type) | Output Shape | Param # |
